@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox id="contenedorVBox" fx:controller="controllers.LoginCont" prefHeight="557.0" prefWidth="749.0" stylesheets="@../prueba.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="562.0" prefWidth="713.0" VBox.vgrow="ALWAYS">
+      <children>
+            <ImageView fitHeight="354.0" fitWidth="326.0" layoutX="25.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/LogoSyscompsa.png" />
+               </image>
+            </ImageView>
+            <Pane layoutX="356.0" layoutY="26.0" prefHeight="350.0" prefWidth="270.0" style="-fx-background-color: #419AB2;">
+               <children>
+                  <Label layoutX="41.0" layoutY="118.0" text="Username" />
+                  <Label layoutX="43.0" layoutY="187.0" text="Password" />
+                  <Button id="loginButton" fx:id="loginButton" alignment="CENTER" layoutX="109.0" layoutY="270.0" mnemonicParsing="false"  style="-fx-border-radius: 20px; -fx-background-radius: 10px; -fx-background-color: white;" text="Login" />
+                  <PasswordField fx:id="passField" layoutX="35.0" layoutY="215.0" prefHeight="25.0" prefWidth="201.0" />
+                  <TextField fx:id="userField" id="textName" depthTest="ENABLE" layoutX="35.0" layoutY="150.0" prefHeight="25.0" prefWidth="201.0" stylesheets="@../prueba.css" />
+                  <ImageView fitHeight="64.0" fitWidth="74.0" layoutX="103.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/avatar.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>
